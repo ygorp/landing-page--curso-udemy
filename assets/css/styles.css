@@ -6,34 +6,7 @@
   --gap: 3rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
 
-
-
-.main-bg {
-  background-image: url(/assets/img/main-bg2.svg);
-  background-size: cover;
-  background-position: center center;
-  color: var(--white-color);
-}
-
-.white-bg {
-  background: var(--white-color);
-}
-
-.main-content {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: var(--gap);
-}
-
-.section {
-  min-height: 100vh;
-}
 
 .menu {
   background: var(--white-color);
