@@ -48,8 +48,7 @@ h6 {
 }
 
 .main-bg {
-  background-image: url(/assets/img/main-bg.svg);
-  background-color: var(--primary-color);
+  background-image: url(/assets/img/main-bg2.svg);
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
