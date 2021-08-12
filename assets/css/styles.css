@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 html {
@@ -56,13 +57,17 @@ h6 {
   font-size: 3.5rem;
 }
 
+p {
+  margin-bottom: 3rem;
+}
+
 .menu {
-  background: var(--white-color);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 1;
   border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
@@ -127,7 +132,7 @@ h6 {
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
-  padding: var(--gap);
+  padding: var(--gap)
 }
 
 .section {
@@ -166,5 +171,27 @@ h6 {
 }
 
 .top3-content {
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   height: 100vh;
+  text-align: center;
+}
+
+.grid-one-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.grid h3 {
+  font-size: 3rem;
 }
