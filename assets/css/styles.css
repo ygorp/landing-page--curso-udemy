@@ -132,12 +132,11 @@ p {
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
-  
+  padding: var(--gap);
 }
 
 .section {
   min-height: 100vh;
-  padding: var(--gap)
 }
 
 .menu-spacing {
@@ -175,9 +174,10 @@ p {
 .top3-content {
   max-width: 64rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -185,7 +185,7 @@ p {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .grid-description {
@@ -215,4 +215,19 @@ font-style: italic;
 top: -4;
 left: -2rem;
 transform: rotate(5deg);
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
